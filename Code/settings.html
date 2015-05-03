@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<!--[if lte IE 6]><html class="preIE7 preIE8 preIE9"><![endif]-->
+<!--[if IE 7]><html class="preIE8 preIE9"><![endif]-->
+<!--[if IE 8]><html class="preIE9"><![endif]-->
+<!--[if gte IE 9]><!-->
+<html lang='en'><!--<![endif]-->
+	<head>
+ 		<title>Social Engineering</title>
+    	<meta charset="utf-8">
+ 		<meta name="Alyssa Bullock" content="width=device-width, initial-scale=1.0">
+  		<meta name="description" content="Social Engineering - Hacking the Human OS is an online hacking simulation game. Play as a hacker trying to gain access to someone's desktop computer based on basic public information. Join now for free.">
+  		<meta name="keywords" content="Hacker, hacker game, hacking simulation, online hacker game, browser game, computer science game, social engineering, social engineering game">
+  		<style type="text/css">
+   			html {
+				background: url("proxy.jpeg") fixed;
+				-webkit-background-size: cover;
+				-moz-background-size: cover;
+				-o-background-size: cover;
+				background-size: cover;
+   			}
+  		</style>
+  	</head>
+  	<body>
+  		<style>
+    		h1 {
+        		text-align: center;
+        		color: white;
+        		font-family: Arial, Helvetica, sans-serif;
+        		font-size: 250%;
+      		}
+      		h3 {
+        		text-align: center;
+        		color: white;
+        		font-family: "Courier New", Courier, monospace;
+      		}
+      		ul {
+       			float: left;
+        		width: 100%;
+        		padding: 0;
+        		margin: 0;
+        		list-style-type: none;
+        		position: fixed;
+        		left: 45%;
+        		top: 45%;
+        		z-index: 100;
+      		}
+      		li {
+        		text-decoration: none;
+        		color: #428bca;
+        		text-decoration: none;
+        		background: transparent;
+        		padding: 5px 5px;
+        		display: block;
+      		}
+      		form {
+      			color: white;
+        		font-family: Arial, Helvetica, sans-serif;
+      		}
+      		.btn-front {
+  				width: 150px;
+			}
+			.btn {
+			  	border-radius: 0;
+			}
+			.btn-lg {
+				padding: 10px 16px;
+				font-size: 18px;
+				line-height: 1.33;
+				border-radius: 6px;
+			}
+			.btn-default {
+			 	color: #333;
+			 	background-color: #fff;
+			 	border-color: #ccc;
+			}
+			.btn {
+			 	display: inline-block;
+			 	padding: 6px 12px;
+			 	margin-bottom: 0;
+			 	font-size: 14px;
+				font-weight: normal;
+				line-height: 1.428571429;
+			  	text-align: center;
+			  	white-space: nowrap;
+			  	vertical-align: middle;
+			  	cursor: pointer;
+			  	background-image: none;
+			  	border: 1px solid transparent;
+			  	border-radius: 4px;
+			  	-webkit-user-select: none;
+			  	-moz-user-select: none;
+			  	-ms-user-select: none;
+			  	-o-user-select: none;
+			  	user-select: none;
+			  	width: 9em;
+			}
+    	</style>
+	    <div class="container">
+	      	<div class="row">
+	        	<div class="col-lg-12">
+	          		<div class="intro-message">
+	            		<h1>Social Engineering</h1>
+	            		<h3 class="digital">Hacking the Human OS<span class="a_bebida_que_pisca">_</span></h3>
+	            		<hr class="intro-divider">
+	            		<ul class="list-inline intro-social-buttons">
+	              			<li><button id="new_game" type="button" name="login" class="btn btn-default btn-lg btn-block"><span class="network-name">New Game</span></li>
+	              			<li><button id="load_game" type="button" name="register" class="btn btn-default btn-lg btn-block"><span class="network-name">Load Game</span></li>
+	              			<li><button id="training" type="button" name="about" class="btn btn-default btn-lg btn-block"><span class="network-name">Training</span></li>
+	              			<li><button id="high_scores" type="button" name="about" class="btn btn-default btn-lg btn-block"><span class="network-name">High Scores</span></li>
+	              			<li><button id="settings" type="button" name="about" class="btn btn-default btn-lg btn-block"><span class="network-name">Settings</span></li>
+	            		</ul>
+	          		</div>
+	        	</div>
+	      	</div>
+	    </div>
+	    <script type="text/javascript">
+      		document.getElementById("new_game").onclick = function () {
+        		location.href = "level_select.html";
+      		};
+    	</script>
+	   	<form action="URL to form script" method="POST">
+			Your name: <br>
+			<input type="text" name="realname"><br>
+			<br>
+			Your email: <br>
+			<input type="text" name="email"><br>
+			<br>
+			Your comments: <br>
+			<textarea name="comments" rows="15" cols="50"></textarea><br><br>
+			<input type="submit" value="Submit">
+		</form>
+  	</body>
+</html>
