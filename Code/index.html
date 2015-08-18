@@ -33,12 +33,70 @@
       </script>
       <style type="text/css">
    			html {
-				background: url("proxy.jpeg") fixed;
+				background-image: url("proxy.jpeg");
 				-webkit-background-size: cover;
 				-moz-background-size: cover;
 				-o-background-size: cover;
 				background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
    			}
+
+        .blinking-cursor {
+          font-weight: 100;
+          font-size: 30px;
+          color: #2E3D48;
+          -webkit-animation: 1s blink step-end infinite;
+          -moz-animation: 1s blink step-end infinite;
+          -ms-animation: 1s blink step-end infinite;
+          -o-animation: 1s blink step-end infinite;
+          animation: 1s blink step-end infinite;
+        }
+
+        @keyframes "blink" {
+          from, to {
+            color: transparent;
+          }
+          50% {
+            color: white;
+          }
+        }
+
+        @-moz-keyframes blink {
+          from, to {
+            color: transparent;
+          }
+          50% {
+            color: white;
+          }
+        }
+
+        @-webkit-keyframes "blink" {
+          from, to {
+            color: transparent;
+          }
+          50% {
+            color: white;
+          }
+        }
+
+        @-ms-keyframes "blink" {
+          from, to {
+            color: transparent;
+          }
+          50% {
+            color: white;
+          }
+        }
+
+        @-o-keyframes "blink" {
+          from, to {
+            color: transparent;
+          }
+          50% {
+            color: white;
+          }
+        }
   		</style>
  	</head>
  	<body>
@@ -117,12 +175,12 @@
         <div class="col-lg-12">
           <div class="intro-message">
             <h1>Social Engineering</h1>
-            <h3 class="digital">Hacking the Human OS<span class="a_bebida_que_pisca">_</span></h3>
+            <h3 class="digital">Hacking the Human OS<span class="blinking-cursor">_</span></h3>
             <hr class="intro-divider">
             <ul class="list-inline intro-social-buttons">
               <li><button id="login" type="button" name="login" class="btn btn-default btn-lg btn-block"><span class="network-name">Login</span></li>
               <li><button id="register" type="button" name="register" class="btn btn-default btn-lg btn-block"><span class="network-name">Register</span></li>
-              <li><button id="about" type="button" name="about" class="btn btn-default btn-lg btn-block"><span class="network-name">About</span></li>
+              <li><button id="about" type="button" disabled name="about" class="btn btn-default btn-lg btn-block"><span class="network-name">About</span></li>
             </ul>
           </div>
         </div>
@@ -130,17 +188,11 @@
     </div>
     <script type="text/javascript">
       document.getElementById("login").onclick = function () {
-        location.href = "log_in.html";
+        location.href = "log_in.php";
       };
       document.getElementById("register").onclick = function () {
-        location.href = "sign_up.html";
-      };
-      document.getElementById("about").onclick = function () {
-        location.href = "about.html";
+        location.href = "sign_up.php";
       };
     </script>
-    <audio autoplay="autoplay" loop="loop">
-      <source src="Concentration - Programming Music 010 (part 2).mp3" type="audio/mpeg">
-    </audio>
  	</body>
 </html>
